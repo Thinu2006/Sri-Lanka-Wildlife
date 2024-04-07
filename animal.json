@@ -1,0 +1,27 @@
+[
+    {
+        "banner": {
+            "pageTitle": "Indigenous Animals In Sri Lanka"
+        }
+    },
+    {
+        "main":{
+            "mainTitle":"ANIMALS IN SRI LANKA",
+            "content":"Sri Lanka, known for its rich biodiversity and lush landscapes, is home to a diverse array of indigenous animals. From the dense forests to the coastal regions, the island nation boasts a unique mix of wildlife. Here, we highlight some of the notable indigenous animals found in Sri Lanka.",
+            "animalOneName":"Toque Macaque",
+            "animalOneContent":"The toque macaque is recognizable by its unique capped appearance. These monkeys are often seen in various habitats, including forests and urban areas.",
+            "animalTwoName":"Sri Lanka Junglefowl",
+            "animalTwoContent":"The national bird of Sri Lanka, the junglefowl, is a colorful and endemic species. Its vibrant plumage and distinctive crowing make it a common sight in the country's forests.",
+            "animalThreeName":"Indian Pangolin",
+            "animalThreeContent":"The Indian Pangolin is a scaly anteater found in Sri Lanka's forests. It is a nocturnal species and is listed as endangered due to threats like habitat loss and poaching.",
+            "subTitle":"Diverse Wildelife In Sri Lanka",
+            "subContent":"To experience the country's natural beauty and encounter these indigenous animals, two prominent national parks stand out: Yala National Park and Wilpattu National Park. These parks offer diverse ecosystems and abundant wildlife sightings.",
+            "boxOneTitle":"Yala National Park",
+            "boxOneContent":"Renowned for its high leopard density, Yala National Park offers a unique safari experience. Visitors can also encounter elephants, crocodiles, and a variety of bird species in this diverse ecosystem.",
+            "boxOneButton":"Explore More",
+            "boxTwoTitle":"Wilpathu National Park",
+            "boxTwoContent":"Known for its natural lakes, Wilpattu National Park is the largest national park in Sri Lanka. It provides a habitat for a wide range of wildlife, including leopards, elephants, and numerous bird species.",
+            "boxTwoButton":"Explore More"
+        }
+    }
+]

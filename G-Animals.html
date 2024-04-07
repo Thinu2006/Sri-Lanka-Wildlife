@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Lanka Wildlife</title>  
+    <link rel="stylesheet" href="./animals.css">
+    <meta name="description" content="Wildlife Sri Lanka">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    
+    <!--icons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <!--Manifest File-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Alpine.js-->
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" class="logo" alt="Logo">
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <a href="login.html">
+                <ion-icon name="log-in-outline" class="loginPage"></ion-icon>
+            </a>
+            <ion-icon name="menu-outline" class="hamburger-btn"></ion-icon>
+            <ion-icon name="close-outline" class="close-btn"></ion-icon>
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="G-index.html">Home</a></li>
+                <li><a href="G-intro.html">About  <ion-icon name="caret-down-outline"></ion-icon></a>
+                <ul>
+                    <li><a href="G-Wilpattu.html">Wilpattu</a></li>
+                    <li><a href="G-Udawalawe.html">Udawalawe</a></li>
+                    <li><a href="G-Minneriya.html">Minneriya</a></li>
+                    <li><a href="G-Yala.html">Yala</a></li>
+                </ul>
+                </li>
+                <li><a href="G-Department.html">Department</a></li>
+                <li><a href="G-Animals.html">Animals  <ion-icon name="caret-down-outline"></ion-icon></a>
+                <ul>
+                    <li><a href="G-Leopards.html">Leopards</a></li>
+                </ul>
+                </li>
+                <button class="login-btn"><a href="login.html" class="link" name="signup">SIGNUP</a></button>
+            </ul>
+        </nav>
+    </header>
+    <section class="bg-image" x-data="banner">
+        <section class="bg-content">
+            <h1 x-text="pageTitle"></h1>
+        </section>
+    </section>
+    <main>
+        <section class="main-container" x-data="main">
+            <section class="main-title" x-text="mainTitle"></section>
+            <section class="content">
+                <p x-text="content" id="paraOne"></p>
+            </section>
+            <table>
+                <tr>
+                    <td class="title-one" x-text="animalOneName"></td>
+                    <td class="text-one" x-text="animalOneContent"></td>
+                    <td>
+                        <section class="image">
+                            <img src="./img/animal-img-1.jpg"class="img-1" alt="Toque Macaque">
+                        </section>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title-two" x-text="animalTwoName"></td>
+                    <td class="text-two" x-text="animalTwoContent"></td>
+                    <td>
+                        <section class="image">
+                            <img src="./img/animal-img-2.jpg" class="img-1" alt="Sri Lanka Junglefowl">
+                        </section>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="title-three" x-text="animalThreeName"></td>
+                    <td class="text-three" x-text="animalThreeContent"></td>
+                    <td>
+                        <section class="image">
+                            <img src="./img/animal-img-3.jpg" class="img-1" alt="Indian Pangolin">
+                        </section>
+                    </td>
+                </tr>
+            </table>
+            <section class="subContainer">
+                <section class="sub-container">
+                    <section class="sub-title" x-text="subTitle"></section>
+                    <section class="sub-content">
+                        <p x-text="subContent" id="paraTwo"></p><br>
+                    </section>
+                </section>
+                <section class="container">
+                    <section class="container-box">
+                        <section class="container-title-one" x-text="boxOneTitle"></section>
+                        <section class="container-content">
+                            <p x-text="boxOneContent" id="paraThree">
+                            </p><br>
+                            <button class="ca-button">
+                                <a href="G-Yala.html" x-text="boxOneButton"></a>
+                            </button>
+                        </section>
+                    </section>
+                    <section class="container-box">
+                        <section class="container-title-two" x-text="boxTwoTitle"></section>
+                        <section class="container-content">
+                            <p x-text="boxTwoContent" id="paraFour"></p><br>
+                            <button class="ca-button">
+                                <a href="G-Wilpattu.html" x-text="boxTwoButton"></a>
+                            </button>
+                        </section>  
+                    </section>
+            </section>
+        </section>
+    </main>
+    <footer id="footer">
+        <section id="newsletter">
+            <h2>Subscribe Newsletter</h2>
+            <form id="subscribeForm">
+                <input type="email" id="emailInput" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        <section class="footer-container">
+            <section class="social-icons">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-google"></ion-icon>
+            </section>
+            <section class="footer-nav">
+                <a href="G-index.html">Home</a>
+                <a href="G-intro.html">About</a>
+                <a href="G-Department.html">Department</a>
+                <a href="G-Animals.html">Animals</a>
+            </section>
+            <section class="footer-bottom">
+                <p>Copyright &copy;2023; Designed by <spam class="designer">Thinudi Fernando</spam></p>
+            </section>
+        </section>
+    </footer>
+    <script src="./animal.js"></script>
+    <script src="./newsletter.js"></script>
+</body>
+</html>

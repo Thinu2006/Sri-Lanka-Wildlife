@@ -1,0 +1,55 @@
+[
+    {
+        "banner": {
+            "pageTitle": "WildLife Sri Lanka",
+            "description": "Explore, conserve, and embrace the diverse tapestry of biodiversity that defines Sri Lanka's wilderness."
+        }
+    },
+    {
+        "intro": {
+            "mainTitle": "Introduction",
+            "introContent": "An Island Nation In The Indian Ocean, Sri Lanka Is Habitat To A Wide Variety Of Wildlife That Draws A Variety Of Environmentalists And Nature Lovers. Sri Lanka Is A Place Of Biodiversity, With Environments Ranging From Tropical Rainforests To Arid Plains, Rich In Rare And Endemic Species, Offering Unparalleled Ecological Marvels. Its diverse landscapes and unique ecosystems make it a hotspot for eco-tourism"
+        }
+    },
+    {
+        "contentOne": {
+            "subOne": "Breathtaking Biodiversity",
+            "subOneContentOne": "The island's biodiversity is unparalleled, with a rich tapestry of ecosystems ranging from lush rainforests to arid plains.The Sinharaja Forest Reserve, a UNESCO World Heritage Site, stands as a testament to Sri Lanka's commitment to conservation. Here, visitors can witness a mesmerizing kaleidoscope of flora and fauna, including endemic species like,",
+            "animals": [
+                "Leopards",
+                "Elephants",
+                "Purple-faced langurs"
+            ],
+            "subOneContentTwo": "For avid birdwatchers, Sri Lanka is a haven of avian wonders, attracting enthusiasts from around the globe. The island's strategic location on bird migration routes and diverse landscapes provide a habitat for over 400 species of birds. From the iconic Sri Lankan junglefowl, the national bird, to migratory species like the Arctic tern, the skies above the island resonate with the melodious calls.",
+            "activities": [
+                "Endemic bird species",
+                "Migratory patterns",
+                "Birdwatching hotspots"
+            ]
+        },
+        "contentTwo": {
+            "subTwo": "Ecotourism In Sri Lanka",
+            "subTwoContentOne": "Explore the importance of responsible ecotourism in Sri Lanka. Visitors can learn how they can contribute to wildlife conservation while enjoying a unique and enriching experience. Discover eco-friendly accommodation options and the significance of minimizing the ecological footprint to ensure the long-term preservation of Sri Lanka's natural treasures."
+        }
+    },
+    {
+        "articles":{
+            "articleTitle": "Daily Articles"
+        },
+        "blogOne":{
+            "boxOne": "Colombo’s seagoing crocodiles under pressure after diver’s killing",
+            "boxOneContent": "A deadly attack at the start of the year has directed public scrutiny at the saltwater crocodiles of Colombo, Sri Lanka’s bustling commercial capital.",
+            "buttonOne": "Read More"
+        },
+        "blogTwo":{
+            "boxTwo": "In Sri Lanka, humans mistakenly attempt to ‘rescue’ leopard cubs",
+            "boxTwoContent": "Leopard mothers often hide their cubs when they are going out hunting or in the process of relocation, and in Sri Lanka’s Central Highlands, workers on tea estates often pick up these cubs, assuming they are either abandoned or lost.",
+            "buttonTwo": "Read More"
+        },
+        "blogThree":{
+            "boxThree": "Forest elephants are the ‘glue’ holding Congo rainforests together, experts say",
+            "boxThreeContent": "African forest elephants play a vital role in shaping the environment and composition of the Congo Basin rainforest, including the giant carbon-sequestering trees it is noted for.",
+            "buttonThree": "Read More"
+        }
+    }
+]

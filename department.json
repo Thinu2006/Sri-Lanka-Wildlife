@@ -1,0 +1,19 @@
+[
+    {
+        "banner": {
+            "pageTitle": "Department of Wildlife Conservation"
+        }
+    },
+    {
+        "container":{
+            "title": "History Of Department of Wildlife Conservation",
+            "content":"The first attempt to stop the destruction of wildlife resources of Sri Lanka was made in 1889, by the Conservator of Forests , Colonel Clark, R.A,. He brought the disastrous effects of the commercial exploitation of wildlife resources in the country, to the notice of the Government of Ceylon and advocated immediate legislation which would forbid the destroying wild animals, for the export of hides. His successor in office, Mr. A.F. Broun continued the agitation and persuaded the Government to pass two Ordinances, titled “An Ordinance to prevent the wanton destruction of elephants, buffaloes and other game” and “An Ordinance to readjust the customs duties leviable on firearms and to impose an export duty on certain hides and horns”",
+            "button":"Explore"
+        }
+    },
+    {
+        "gallery":{
+            "subTitle":"Gallery"
+        }
+    }
+]

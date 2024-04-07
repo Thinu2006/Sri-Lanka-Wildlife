@@ -1,0 +1,13 @@
+[
+    {
+        "menu": {
+            "menuTitle": "Admin Dashboard"
+        }
+    },
+    {
+        "content":{
+            "titleOne":"Welcome, Admin!",
+            "titleTwo":"Newsletter Subscriptions:"
+        }
+    }
+]

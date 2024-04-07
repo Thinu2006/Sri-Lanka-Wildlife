@@ -1,0 +1,642 @@
+*{
+    margin: 0;
+    padding: 0; 
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+	text-transform: capitalize;
+}
+html, body{
+    height: auto;
+}
+body{
+    background-color:#2b4813;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: #000;
+	padding: 18px 25px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	z-index: 100;
+}
+.logo {
+	width: 100px;
+    float: left;
+}
+.navbar ul {
+	list-style: none;
+}
+.navbar ul li {
+	position: relative;
+	float: left;
+	display: block;
+}
+.navbar ul li a {
+	font-size: 20px;
+	padding: 10px 40px;
+	color: #fff;
+	display: block;
+}
+.navbar ul li a:hover,
+.navbar ul li ul li a:hover {
+	background-color: #6360605e;
+}  
+.navbar ul li ul {
+	position: absolute;
+	left: 0;
+	width: 200px;
+	display: none;
+	margin: 0;
+	padding-top: 20px;
+}
+.navbar ul li ul li {
+	width: 100%;
+	background: #140f0f;
+}
+.navbar ul li:focus-within > ul,
+.navbar ul li:hover > ul {
+	display: block;
+}
+#check{
+    display: none;
+}
+.icons,.loginPage{
+    position: absolute;
+    right: 1%;
+    font-size: 2.8rem;
+    color: #ffff;
+    cursor: pointer;
+    display: none;
+}
+.login-btn{
+    background-color: #fff;
+    border: none;
+    outline: none;
+	font-size: 16px;
+	margin-top: 5px;
+	font-weight: 600;
+    padding: 10px 18px;
+	border-radius: 3px;
+    cursor: pointer;
+}
+.link{
+    color: #000;
+}
+@media(max-width:915px){
+	header{
+		padding: 20px 30px;
+	}
+	.logo{
+        width: 90px;
+    }
+    .icons{
+        display: inline-flex;
+        padding-right: 60px;
+    }
+    .all-icons{
+        justify-content: center;
+    }
+	.navbar{
+		position: absolute;
+		top: 100%;
+		right: 0;
+		background:rgba(0,0, 0, .3);
+        backdrop-filter: blur(50px);
+        box-shadow:rgba(0,0,0, .1);
+		display: none;
+		padding: 40px 0px 40px 0px;
+        width: 60%;
+	}
+	.navbar ul li{
+        float: left;
+		width: 100%;
+		text-align: left;
+	}
+	.navbar ul li ul{
+		position: relative;
+		width: 100%;
+		padding-top: 0%;
+	}
+	.navbar ul li ul li{
+		padding-left: 20px;
+		border-top: none;
+		background:none;
+	}
+	#check:checked~.icons .hamburger-btn{
+        display: none;
+    }
+    .icons .close-btn{
+        display: none;
+    }
+    #check:checked~.icons .close-btn{
+        display: block;
+    }
+	#check:checked~.navbar{
+        height: auto;
+        display: inline;
+    }
+	#check:checked~.navbar a{
+        transform: translateY(0px);
+        transition-delay: calc(.15s * var(--i)) ;
+    }
+    .login-btn{
+        display: none;
+    }
+    .loginPage{
+        display: inline;
+        float: right; 
+    }
+}
+/*-----Banner-----*/
+.bg-image{
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: url(./img/animal-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+.bg-image::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+}
+.bg-content{
+    position: relative;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 50px auto;
+}
+.bg-content h1{
+    font-size: 80px;
+    color: #fff;
+    font-weight: 300;
+	margin: 0%;
+}
+@media(max-width: 768px){
+    .bg-content{
+        width: 100%;
+		margin: 10px auto;
+    }
+    .bg-content h1{
+        font-size: 40px;
+    }
+}
+/*------Body------*/
+main{
+    margin: 80px 50px 80px 50px;
+}
+.main-container{
+    margin: 40px 20px 0px 20px;
+    background-color:#ce9851;
+    border-radius: 60px;
+    padding: 40px 20px 80px 20px;
+}
+.main-title{
+    padding-top: 20px;
+    font-weight: 600;
+    color: #4A0404;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    font-size: 30px;
+    text-align: center;
+}
+.content{
+    font-size: 22px;
+    text-align: center;
+    padding: 30px;
+}
+
+/*----table of animals-----*/
+table{
+    padding: 20px;
+    text-align: center;
+}
+tr,td{
+    border: 1px solid;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.title-one, .title-two, .title-three{
+    font-weight: 600;
+    width: 300px;
+    text-align: center;
+}
+.text-one, .text-two, .text-three{
+    text-align: justify;
+    padding: 10px;
+    font-size: 20px;
+}
+.img-1{
+    width: auto;
+    height: 210px;
+    float: center;
+    padding:10px;
+}
+
+/*----Linked to Parks-----*/
+.sub-container{
+    background-color:#ce9851;
+    border-radius: 60px;
+    margin-top: 60px;
+}
+.sub-title{
+    text-decoration: underline;
+    padding-top: 20px;
+    color: #4A0404;
+    font-size: 27px;
+    font-weight: 600; 
+    text-align: center;
+}
+.sub-content{
+    font-size: 22px;
+    text-align: center;
+    padding: 50px 30px 0px 30px;
+}
+.container{
+    display: flex;
+    text-align: center;
+}
+.container-box{
+    display: inline-block; 
+    border-radius: 30px;
+    border: 3px solid;
+    margin: 60px;
+}
+.container-title-one, .container-title-two {
+    font-size: 25px;
+    font-weight: 800;
+    margin-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container-content{
+    font-size: 20px;
+    padding: 20px 30px 20px 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.ca-button{
+    background-color: #9bd127;
+    padding: 8px;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.ca-button a{
+    color: #000;
+    font-size: 17px;
+    text-decoration: none;
+    font-weight: 700;
+}
+@media  screen and (max-width:990px){
+    main{
+        margin: 20px 10px 0px 10px;
+    }
+    .main-container{
+        margin: 10px 8px 100px 8px;
+        padding: 10px 10px 80px 10px;
+    }
+    .main-title{
+        font-size: 25px;
+        padding: 20px;
+    }
+    .content{
+        padding: 5px;
+        font-size: 18px;
+        text-align: center;
+    }
+    table,tr{
+        padding: 20px 0px;
+    }
+    table td{
+        display: block;
+        border-collapse: collapse;
+    }
+    .title-one,.title-two,.title-three{
+        width: 100%;
+        padding: 10px;
+    }
+    .text-one,.text-two,.text-three,.title-one,.title-two,.title-three{
+        font-size: 18px;
+        text-align: center;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .sub-title{
+        font-size: 22px;
+    }
+    .sub-content{
+        font-size: 18px;
+        margin-top: 30px;
+        padding: 5px;
+    }
+    .container-box{
+        margin: 20px;
+        border: 2px solid;
+    }
+    .container-title-one,.container-title-two{
+        font-size: 20px;
+    }
+    .container-content{
+        font-size: 18px;
+        padding: 10px;
+    }
+
+}
+/*-----Footer-----*/
+#footer{
+    margin-top: auto;
+    align-content: center;
+    position: relative;
+    clear: both;
+    padding-bottom: 0%;
+}
+.footer-container,#newsletter{
+    width: 100%;
+    background-color: #0f0f0f;
+}
+/*------Newsletter-------*/
+#newsletter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #5c5c5c;
+}
+#newsletter h2{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 30px 50px 30px;
+}
+#subscribeForm input{
+    margin: 0 20px 0 20px;
+    height: 30px;
+    width: 300px;
+    padding: 0 15px;
+    outline: none;
+}
+#subscribeForm button{
+    height: 35px;
+    width: 100px;
+    margin-left: 10px;
+    color: #fff;
+    background-color: #790602;
+    border: none;
+}
+
+/*-----icons-----*/
+.social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0 0 30px 0;
+    padding-top: 30px;
+}
+.social-icons ion-icon{
+    color: #fff;
+    transition: color 0.2s;
+    margin: 0 25px;
+}
+/*-----nav-----*/
+.footer-nav {
+    display: flex;
+    justify-content: center;
+}  
+.footer-nav a{
+    color: white;
+    margin: 0 30px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bolder;
+    opacity: 1.7;
+    transition: 0.5s;
+    padding-bottom:10px;
+}  
+.footer-nav a:hover{
+    color: #9bd127;
+} 
+/*-----copyright-----*/
+.footer-bottom{
+    background-color: #0f0f0f;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+.footer-bottom p{
+    text-align: center;
+    font-weight: bolder;
+    color: #ffffff69;
+    font-size: 13px;
+}
+.designer{
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+@media  screen and (max-width:778px){
+    #footer{
+        height:230px;
+    }
+    .social-icons{
+        gap: 15px;
+    }
+    .footer-nav{
+        flex-direction: column;
+        text-align: center;
+        line-height: 15px;
+    }
+    .footer-nav a{
+        font-size: 13px;
+    }
+    .footer-bottom p{
+        font-size: 10px;
+    }
+    #newsletter h2{
+        margin: 30px 30px 30px 30px;
+        font-size: 18px;
+    }
+    #subscribeForm{
+        margin: 30px 30px 40px 30px;
+    }
+    #subscribeForm input{
+        height: 25px;
+        width: 150px;
+        font-size: 12px;
+        padding: 0 8px;
+    }
+    #subscribeForm button{
+        height: 30px;
+        width: 110px;
+        font-size: 13px;
+    }
+}
+@media  screen and (max-width:630px){
+    #subscribeForm{
+        margin: 0px 30px 40px 30px;
+    }
+}
+@media screen and (max-width: 382px){
+    #subscribeForm input{
+        width: 100px;
+        padding: 3px 20px;
+    }
+    #subscribeForm button{
+        height: 40px;
+        width: 110px;
+        font-size: 13px;
+    }
+}
+
+/*---Edit Pop----*/
+button {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: rgb(115, 119, 118);
+    border: none;
+    cursor: pointer;
+}
+.editbtnOne {
+    float: right;
+    font-size: 16px;
+    margin: 0px 30px 0px 0;
+}
+.editbtnTwo {
+    float: right;
+    font-size: 16px;
+    margin: 0px 80px 70px 0;
+}
+.modal {
+    display: none;
+    position: fixed;
+    transform: translate(-50%, -50%); 
+    left: 50%;
+    top: 57%;
+    width: 70%;
+    height: 75%;
+    overflow: auto;
+    background-color: #fff;
+    border: 2px solid #686767;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    padding: 5px;
+}
+.model-title {
+    margin: 20px 30px 0px 30px;
+    text-align: center;
+    background: white;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.modal-content {
+    margin: 1% auto;
+    padding: 20px 0px;
+    border: 1px solid #888;
+    width: 90%;
+    background: white;
+}
+.modal-content textarea {
+    border-radius: 5px;
+    border: none;
+}
+.editTitle {
+    font-size: 17px;
+    text-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    font-weight: 600;
+    height: 20px;
+    padding: 15px;
+    width: 95%;
+}
+.editPara {
+    font-size: 15px;
+    height: 60px;
+    padding: 15px;
+    width: 95%;
+}
+.editTbTitle{
+    font-size: 15px;
+    height: 70px;
+    width: 22%;
+    padding: 15px;
+}
+.editTbPara{
+    font-size: 15px;
+    height: 70px;
+    width: 70%;
+    padding: 10px;
+}
+.editBox{
+    font-size: 15px;
+    font-weight: 600;
+    height: 90px;
+    width: 22%;
+    padding: 10px;
+    text-align: center;
+}
+.editBoxPara{
+    font-size: 15px;
+    height: 90px;
+    width: 71%;
+    text-align: justify;
+    padding: 10px;
+}
+.model-button{
+    margin: 10px;
+}
+@media  screen and (max-width:990px){
+    .editbtnOne{
+        font-size: 14px;
+        margin: 0px;
+    }
+    .editbtnTwo{
+        font-size: 14px;
+        margin: 10px 20px 70px 0;
+    }
+    .modal{
+        top: 57%;
+        width: 82%;
+        height: 83%;
+    }
+    .model-title {
+        padding-bottom: 10px;
+    }
+    .modal-content textarea {
+        width: 88%;
+        margin: 0px;
+        text-align: justify;
+    }
+    .editTitle {
+        height: 20px;
+    }
+    .editPara {
+        height: 180px;
+        width: 90%;
+    }
+    .editTbTitle{
+        height: 20px;
+        padding: 10px;
+    }
+    .editTbPara{
+        height: 110px;
+        width: 95%;
+    }
+    .editBox{
+        height: 20px;
+        width: 22%;
+    }
+    .editBoxPara{
+        height: 130px;
+    }
+
+}

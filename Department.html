@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department</title>  
+    <link rel="stylesheet" href="./Department.css">
+    <meta name="description" content="Wildlife Sri Lanka">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    
+    <!--icons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <!--Manifest File-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Alpine.js-->
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" class="logo" alt="logo">
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <a href="login.html">
+                <ion-icon name="log-in-outline" class="loginPage"></ion-icon>
+            </a>
+            <ion-icon name="menu-outline" class="hamburger-btn"></ion-icon>
+            <ion-icon name="close-outline" class="close-btn"></ion-icon>
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="intro.html">About  <ion-icon name="caret-down-outline"></ion-icon></a>
+                <ul>
+                    <li><a href="Wilpattu.html">Wilpattu</a></li>
+                    <li><a href="Udawalawe.html">Udawalawe</a></li>
+                    <li><a href="Minneriya.html">Minneriya</a></li>
+                    <li><a href="Yala.html">Yala</a></li>
+                </ul>
+                </li>
+                <li><a href="Department.html">Department</a></li>
+                <li><a href="Animals.html">Animals  <ion-icon name="caret-down-outline"></ion-icon></a>
+                <ul>
+                    <li><a href="Leopards.html">Leopards</a></li>
+                </ul>
+                </li>
+                <button class="login-btn"><a href="login.html" class="link" name="logout">LOGOUT</a></button>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="bg-image">
+        <section class="bg-content" x-data="banner">
+            <section class="bg-content-sub">
+                <h1 x-text="pageTitle"></h1>
+            </section>
+        </section>
+    </section>
+
+    <main>
+        <section class="container" x-data="container">
+            <section class="main-title" x-text="title"></section>
+            <section class="content">
+                <P x-text="content"></P>
+                <button class="cta-button">
+                    <a href="https://www.dwc.gov.lk/about-the-agency/" x-text="button"></a>
+                </button>
+            </section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.9479147887782!2d79.91608104993284!3d6.896833488645243!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae250aa85489b1f%3A0xd8773339b6b43dbb!2sDepartment%20of%20Wildlife%20Conservation!5e0!3m2!1sen!2slk!4v1704101385602!5m2!1sen!2slk" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            <button onclick="openEditor()" class="editbtn">Click to Edit Content</button>
+        </section>
+        <section class="gallery" x-data="gallery">
+            <section class="main-title" x-text="subTitle"></section>
+            <section class="gallery-img">
+                <img src="./img/G-img-1.jpg" alt="Gallery img 1">
+                <img src="./img/G-img-2.jpeg" alt="Gallery img 2">
+                <img src="./img/G-img-3.jpg" alt="Gallery img 3">
+                <img src="./img/G-img-4.jpeg" alt="Gallery img 4">
+                <img src="./img/G-img-5.jpg" alt="Gallery img 5">
+                <img src="./img/G-img-6.jpg" alt="Gallery img 6">
+                <img src="./img/G-img-7.jpg" alt="Gallery img 7">
+                <img src="./img/G-img-8.jpg" alt="Gallery img 8">
+                <img src="./img/G-img-9.jpg" alt="Gallery img 9">
+            </section>
+        </section>
+        <!-- The Modal -->
+        <section id="editModal" class="modal">
+            <h1 class="model-title">Edit Content</h1>
+            <!-- Modal content -->
+            <section class="modal-content">
+                <textarea id="editedTitle" placeholder="Edit content" class="editTitle"></textarea><br>
+                <textarea id="editedPara" placeholder="Edit content" class="editPara"></textarea><br>
+            </section>
+            <button onclick="saveChanges()">Save Changes</button>
+            <button onclick="closeEditor()">Close</button>
+        </section>
+    </main>   
+    <footer id="footer">
+        <section id="newsletter">
+            <h2>Subscribe Newsletter</h2>
+            <form id="subscribeForm">
+                <input type="email" id="emailInput" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        <section class="footer-container">
+            <section class="social-icons">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-google"></ion-icon>
+            </section>
+            <section class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="intro.html">About</a>
+                <a href="Department.html">Department</a>
+                <a href="Animals.html">Animals</a>
+            </section>
+            <section class="footer-bottom">
+                <p>Copyright &copy;2023; Designed by <spam class="designer">Thinudi Fernando</spam></p>
+            </section>
+        </section>
+    </footer>
+    <script src="./department.js"></script> 
+    <script src="./newsletter.js"></script>
+</body>
+</html>

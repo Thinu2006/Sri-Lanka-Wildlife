@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udawalawe National Park</title>  
+    <link rel="stylesheet" href="./Udawalawe.css">
+    <meta name="description" content="Wildlife Sri Lanka">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    
+    <!--icons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <!--Manifest File-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Alpine.js-->
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" class="logo">
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <a href="login.html">
+                <ion-icon name="log-in-outline" class="loginPage"></ion-icon>
+            </a>
+            <ion-icon name="menu-outline" class="hamburger-btn"></ion-icon>
+            <ion-icon name="close-outline" class="close-btn"></ion-icon>
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="G-index.html">Home</a></li>
+                <li><a href="G-intro.html">About  <ion-icon name="caret-down-outline"></ion-icon></a>
+                <ul>
+                    <li><a href="G-Wilpattu.html">Wilpattu</a></li>
+                    <li><a href="G-Udawalawe.html">Udawalawe</a></li>
+                    <li><a href="G-Minneriya.html">Minneriya</a></li>
+                    <li><a href="G-Yala.html">Yala</a></li>
+                </ul>
+                </li>
+                <li><a href="G-Department.html">Department</a></li>
+                <li><a href="G-Animals.html">Animals  <ion-icon name="caret-down-outline"></ion-icon></a>
+                <ul>
+                    <li><a href="G-Leopards.html">Leopards</a></li>
+                </ul>
+                </li>
+                <button class="login-btn"><a href="login.html" class="link"  name="signup">SIGNUP</a></button>
+            </ul>
+        </nav>
+    </header>
+    <section class="bg-image" x-data="banner">
+        <section class="bg-content">
+            <h1 x-text="pageTitle"></h1>
+        </section>
+    </section>
+    <main>
+        <section class="main-container" x-data="intro">
+            <section class="main-title" x-text="mainTitle"></section>
+            <section class="content">
+                <section class="text">
+                    <p x-text="content"></p><br>
+                    <ul id="list">
+                        <template x-for="info in udawalawe">
+                            <li x-text="info"></li>
+                        </template>
+                    </ul>
+                </section>
+                <section class="detail">
+                    <img src="./img/udawalawe-image-1.jpg"class="img" alt="Deers">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126857.44912710293!2d80.81955540753965!3d6.484239058289692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae408ff88887e79%3A0xaf12e79ffbd980d7!2sUdawalawe%20National%20Park!5e0!3m2!1sen!2slk!4v1703500033876!5m2!1sen!2slk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+                </section>
+            </section> 
+        </section>
+        <section class="table-container" x-data="tableData">
+            <section class="main-title" x-text="tabletitle" id="tbTitle"></section>
+            <table>
+                <thead>
+                    <tr>
+                        <th x-text="headerOne" id="tbTitleOne"></th>
+                        <th x-text="headerTwo" id="tbTitleTwo"></th>
+                        <th x-text="headerThree"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="data-name">
+                            <section class="nameOne" x-text="animalOne"></section>
+                        </td>
+                        <td class="data-name">
+                            <section class="fact">
+                                <ul id="tbListOne">
+                                    <template x-for="info in animalOneData">
+                                        <li x-text="info"></li>
+                                    </template>
+                                </ul>
+                            </section>    
+                        </td>
+                        <td class="data-name">
+                            <section class="data-image">
+                                <img src="./img/U-tb-img-1.jpg" alt="Elephant">
+                            </section>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="data-name">
+                            <section class="nameTwo" x-text="animalTwo"></section>
+                        </td>
+                        <td class="data-name">
+                            <section class="fact">
+                                <ul id="tbListTwo">
+                                    <template x-for="info in animalTwoData">
+                                        <li x-text="info"></li>
+                                    </template>
+                                </ul>
+                            </section>       
+                        </td>
+                        <td class="data-name">
+                            <section class="data-image">
+                                <img src="./img/U-tb-img-2.jpg" class="img-1" alt="Deers">
+                            </section>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="data-name">
+                            <section class="nameThree" x-text="animalThree"></section>
+                        </td>
+                        <td class="data-name">
+                            <section class="fact">
+                                <ul id="tbListThree">
+                                    <template x-for="info in animalThreeData">
+                                        <li x-text="info"></li>
+                                    </template> 
+                                </ul>
+                            </section>       
+                        </td>
+                        <td class="data-name">
+                            <section class="data-image">
+                                <img src="./img/U-tb-img-3.jpg" class="img-1" alt="leopard">
+                            </section>
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3" class="t-footer" x-text="source"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section> 
+    </main>
+    <footer id="footer">
+        <section id="newsletter">
+            <h2>Subscribe Newsletter</h2>
+            <form id="subscribeForm">
+                <input type="email" id="emailInput" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        <section class="footer-container">
+            <section class="social-icons">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-google"></ion-icon>
+            </section>
+            <section class="footer-nav">
+                <a href="G-index.html">Home</a>
+                <a href="G-intro.html">About</a>
+                <a href="G-Department.html">Department</a>
+                <a href="G-Animals.html">Animals</a>
+            </section>
+            <section class="footer-bottom">
+                <p>Copyright &copy;2023; Designed by <spam class="designer">Thinudi Fernando</spam></p>
+            </section>
+        </section>
+    </footer>
+    <script src="./udawalawe.js"></script>
+    <script src="./newsletter.js"></script>
+</body>
+</html>

@@ -1,0 +1,156 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+aside {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    width: 150px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+header {
+    display: none; 
+}
+.navbar ul li a {
+	font-size: 18px;
+    padding-bottom: 10px;
+	color: #2ea111;
+	display: block;
+    text-decoration: none;
+}
+.logo{
+    width: 100px;
+}
+#close-btn, #check{
+    display: none;
+}
+h2{
+    font-size: 25px;
+    color: #ffffff;
+}
+nav ul {
+    list-style-type: none;
+}
+.logout {
+    background-color: #ffffff;
+    margin: 280px 0px 0 0px;
+    padding: 8px 12px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+.logout a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+}
+main {
+    margin-left: 220px;
+    padding: 0px 40px 40px 30px;
+}
+.title {
+    background-color: #c5c1c1;
+    border-bottom: 2px solid #817f7f;
+    margin-bottom: 30px;
+}
+.title h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #4e0000;
+    padding: 30px 20px 10px 20px;
+    font-weight: 600;
+}
+
+/* Responsive*/
+
+@media screen and (max-width: 768px) {
+    main {
+        margin-left: 0;
+        padding: 0px 20px 50px 20px;
+    }
+    header {
+        display: flex;
+        background: #000;
+        padding: 10px 25px 50px 25px;
+        z-index: 100;
+    }
+    .logo{
+        width: 90px;
+    }
+    .icons {
+        position: absolute;
+        right: 1%;
+        font-size: 2.8rem;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    h2{
+        padding-top: 0px;
+    }
+    #close-btn {
+        padding-left: 90%;
+        display: block;
+        margin: 0;
+    }
+    .title h1 {
+        font-size: 25px;
+    }
+    .logout {
+        background-color: #ffffff;
+        margin: 300px 0px 0 0px;
+        padding: 6px 10px;
+    }
+    .logout a{
+        font-size: 18px;
+    }
+}
+
+/*Registered Users Details*/
+.user-details{
+    margin-top: 50px;
+    border: 2px solid #0a0a0a;
+    padding: 10px 50px 10px 50px; 
+}
+.user-details h3,.newsletter-subcribe h3 {
+    font-size: 23px;
+}
+.newsletter-subcribe{
+    margin-top: 50px;
+    border: 2px solid #0a0a0a;
+    padding: 10px 50px 30px 50px; 
+}
+.user-details p {
+    padding-left: 30px;
+    font-size: 18px;
+}
+.newsletter-subcribe li {
+    margin: 10px 0px 10px 40px;
+    font-size: 18px;
+}
+
+@media screen and (max-width: 768px) {
+    .user-details{
+        margin-top: 0px;
+        padding: 10px 0px 0px 20px; 
+    }
+    .user-details h3,.newsletter-subcribe h3 {
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    .user-details p {
+        padding-left: 5px;
+    }
+    .newsletter-subcribe{
+        margin-top: 30px;
+        padding: 15px 0px 30px 15px; 
+    }
+    .newsletter-subcribe li {
+        margin: 10px 0px 10px 25px;
+    }
+}

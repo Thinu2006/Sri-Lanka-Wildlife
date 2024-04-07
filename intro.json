@@ -1,0 +1,25 @@
+[
+    {
+        "banner": {
+            "pageTitle": "Wildlife Wonders of Sri Lanka"
+        }
+    },
+    {
+        "containerOne":{
+            "mainTitle":"Major National Parks In Sri Lanka",
+            "contentOne":"Sri Lanka, a tropical paradise nestled in the Indian Ocean, is adorned with a rich tapestry of biodiversity and natural beauty. Among its many treasures are several national parks that showcase the country's diverse ecosystems, wildlife, and stunning landscapes. From the lush rainforests teeming with rare species to the picturesque coastline dotted with pristine beaches, Sri Lanka offers a captivating escape into nature's embrace.",
+            "boxOne":"Yala National Park",
+            "buttonOne":"Explore",
+            "boxTwo":"Wilpathu National Park",
+            "buttonTwo":"Explore"
+        },
+        "containerTwo":{
+            "subTitle":"Minor National Parks In Sri Lanka",
+            "contentTwo":"While Sri Lanka boasts major national parks that draw international attention, the island is also adorned with a number of lesser-known yet equally enchanting minor national parks. These parks, though smaller in scale, offer unique ecosystems, biodiversity, and scenic beauty for seeking a more intimate. From the lush forests of Gal Oya to the coastal marvels of Bundala, these hidden gems promise unforgettable encounters with nature's wonders.",
+            "boxThree":"Udawalawe National Park",
+            "buttonThree":"Explore",
+            "boxFour":"Minneriya National Park",
+            "buttonFour":"Explore"
+        }
+    }
+]
