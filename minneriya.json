@@ -1,0 +1,44 @@
+[
+    {
+        "banner": {
+            "pageTitle": "Minneriya National Park"
+        }
+    },
+    {
+        "intro":{
+            "mainTitle":"Introduction",
+            "content":"Nestled in the heart of Sri Lanka, Minneriya National Park beckons nature enthusiasts with its lush landscapes and captivating biodiversity. This natural haven, established to protect and showcase the region's unique flora and fauna, unfolds a tapestry of diverse ecosystems. Visitors to Minneriya are treated to a symphony of sounds, vibrant colors, and the allure of untamed wilderness. The park's charm lies in its ability to provide an immersive experience, inviting exploration and discovery amidst the scenic beauty of this captivating sanctuary.",
+            "minneriya":[
+                "Location: Nothern province of Sri Lanka",
+                "Size: 88.9 square kilometers",
+                "Animals: Elephant, water buffalo, crocodile, nilgai, jackal, etc.",
+                "Vegetation: Dry evergreen forests, scrub jungle, and reed beds"
+            ]
+        }
+    },
+    {
+        "tableData":{
+            "tabletitle":"Summary Table",
+            "headerOne":"Animal Name",
+            "headerTwo":"Interesting Fact",
+            "headerThree":"Image",
+            "animalOne":"Sri Lankan Elephant",
+            "animalOneData":[
+                "The Sri Lankan Elephants in Minneriya National Park engage in a unique behavior known as the Gathering, where hundreds of them congregate around the Minneriya Tank during the dry season.",
+                "This park hosts the largest Asian elephant gathering in the world,drawing wildlife enthusiasts to witness the spectacular sight of these majestic creatures in close proximity."
+            ],
+            "animalTwo":"Sri Lanka Scops Owl",
+            "animalTwoData":[
+                "It is known for its distinctively haunting nighttime calls that echo through the park's dense foliage.",
+                "It excels in camouflage, seamlessly blending into Minneriya National Park's dense foliage, making it elusive and challenging to spot."
+            ],
+            "animalThree":"Sloth Bear",
+            "animalThreeData":[
+                "The sloth bear in Minneriya National Park is characterized by its unique shaggy coat and a distinctive V-shaped white mark on its chest.",
+                "These nocturnal insectivores are skilled climbers, often found in trees foraging for fruits, insects, and honey."
+            ],
+            "source":"Data sourced from Minneriya National Park official information"
+
+        }
+    }
+]

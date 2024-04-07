@@ -1,0 +1,21 @@
+[
+    {
+        "menu": {
+            "menuTitle": "User Dashboard"
+        }
+    },
+    {
+        "gridData":{
+            "title":"Welcome, User!",
+            "gridOne":"Home",
+            "gridTwo":"National Parks",
+            "gridThree":"Department of Wildlife Conservation",
+            "gridFour":"Animals",
+            "gridFive":"Leopards",
+            "gridSix":"Wilpattu National Park",
+            "gridSeven":"Yala National Park",
+            "gridEight":"Udawalawe National Park",
+            "gridNine":"Minneriya National Park"
+        }
+    }
+]

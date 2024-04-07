@@ -1,0 +1,23 @@
+[
+    {
+        "banner": {
+            "pageTitle": "Beauty Of Yala National Park"
+        }
+    },
+    {
+        "intro":{
+           "title":"Introduction",
+           "content":"Yala National Park, Sri Lanka's second-largest reserve established in 1938, sprawls across 979 square kilometers, encompassing diverse landscapes from dense forests to open grasslands. Renowned for its rich biodiversity, it is a haven for elephants, leopards, and various bird species. Serving as a vital sanctuary, Yala captivates visitors with its unique ecosystems, making it a prime destination for wildlife enthusiasts seeking an immersive experience in one of the oldest and most expansive national parks in the country."
+        }
+    },
+    {
+        "yalaData":{
+            "cardOneTitle":"Landscapes and Ecosystems",
+            "cardOneContent":"From lush moist monsoon forests to freshwater and marine wetlands, the park offers a unique blend of habitats. These varied landscapes contribute to Yala's exceptional biodiversity, creating a haven for a wide range of flora and fauna. Visitors have the opportunity to explore and appreciate the distinct natural environments within the park, making it a captivating destination for those seeking an immersive experience in Sri Lanka's vibrant wilderness.",
+            "cardTwoTitle":"Activities to Engage In Yala Park",
+            "cardTwoContent":"In Yala National Park, visitors can partake in a plethora of activities to immerse themselves in its natural wonders. From exhilarating safaris to spot elusive leopards and elephants, to birdwatching amidst diverse habitats, and exploring ancient rock temples, Yala offers an adventure-filled experience. Nature walks, camping under the stars, and photographic safaris also provide unique opportunities to connect with the park's rich biodiversity.",
+            "cardThreeTitle":"Challenges and Conservation Initiatives",
+            "cardThreeContent":"Yala National Park grapples with challenges like habitat fragmentation, human-wildlife conflict, and climate change impacts. To address these issues, comprehensive conservation initiatives have been implemented. Reforestation projects aim to counter habitat loss, creating wildlife corridors to connect fragmented areas. Community-based programs foster harmony between locals and wildlife, reducing conflict."
+        } 
+    }
+]

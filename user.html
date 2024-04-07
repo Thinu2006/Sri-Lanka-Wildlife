@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+    <link rel="stylesheet" href="user.css">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    
+    <!--icons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <!--Manifest File-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Alpine.js-->
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body>
+    <header> 
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <ion-icon name="menu-outline" id="menu-toggle"></ion-icon>
+        </label>
+    </header>
+    <aside id="menu">
+        <section x-data="menu">
+            <ion-icon name="close-outline" id="close-btn"></ion-icon>
+            <img src="./img/logo.png" class="logo">
+            <h2 x-text="menuTitle"></h2>
+        </section>
+        <nav>
+            <ul>
+                <button class="logout"><a href="login.html">Logout</a></button>
+            </ul>
+        </nav>
+    </aside>
+
+    <main x-data="gridData">
+        <section class="title">
+            <h1 x-text="title"></h1>
+        </section>
+
+        <section class="grid-container">
+            <section class="grid-item">
+                <p x-text="gridOne"></p>
+                <button onclick="location.href='index.html'">Click</button>
+            </section>
+            <section class="grid-item">
+                <p  x-text="gridTwo"></p>
+                <button onclick="location.href='intro.html'">Click</button>
+            </section>
+            <section class="grid-item">
+                <p  x-text="gridThree"></p>
+                <button onclick="location.href='Department.html'">Click</button>
+            </section>
+            <section class="grid-item">
+                <p  x-text="gridFour"></p>
+                <button onclick="location.href='Animals.html'">Click</button>
+            </section>
+            <section class="grid-item">
+                <p  x-text="gridFive"></p>
+                <button onclick="location.href='Leopards.html'">Click</button>
+            </section>
+            <section class="grid-item">
+                <p  x-text="gridSix"></p>
+                <button onclick="location.href='Wilpattu.html'">Click</button>
+            </section>
+            <section class="grid-item">
+                <p  x-text="gridSeven"></p>
+                <button onclick="location.href='Yala.html'">Click</button>
+            </section>
+            <section class="grid-item">
+                <p  x-text="gridEight"></p>
+                <button onclick="location.href='Udawalawe.html'">Click</button>
+            </section>
+            <section class="grid-item">
+                <p  x-text="gridNine"></p>
+                <button onclick="location.href='Minneriya.html'">Click</button>
+            </section>
+        </section>
+    </main>
+    <script src="user.js"></script>
+</body>
+</html>

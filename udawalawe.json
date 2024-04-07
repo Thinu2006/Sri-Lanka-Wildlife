@@ -1,0 +1,44 @@
+[
+    {
+        "banner": {
+            "pageTitle": "Udawalawe National Park"
+        }
+    },
+    {
+        "intro":{
+            "mainTitle":"Introduction",
+            "content":"Udawalawe National Park is a popular tourist destination in Sri Lanka, renowned for its teeming wildlife and rich flora. It is the second largest national park in the country and serves as a crucial habitat for the country's wildlife. It was established in 1982 to protect the habitats of Sri Lanka's large mammals, such as the Sri Lankan elephant, sloth bear, and leopard. The park is known for its unique rock formations and ancient water tanks.The park offers various tourist activities, such as wildlife safaris, hiking trails, and visits to the ancient water tanks.",
+            "udawalawe":[
+                "Location: Southern province of Sri Lanka",
+                "Size: 90.8 square kilometers",
+                "Animals: Leopard, elephant, deer, jackal, crocodile, etc.",
+                "Vegetation: Dry evergreen forests and thorn scrub."
+            ]
+        }
+    },
+    {
+        "tableData":{
+            "tabletitle":"Summary Table",
+            "headerOne":"Animal Name",
+            "headerTwo":"Interesting Fact",
+            "headerThree":"Image",
+            "animalOne":"Asian Elephant",
+            "animalOneData":[
+                "Udawalawe has one of the highest elephant densities in the world, providing a unique opportunity to witness these majestic creatures in their natural habitat.",
+                "The resident Asian elephants in Udawalawe are known for their distinctive behavior of using their trunks to spray themselves with dust, a fascinating and unique display of their social interactions."
+            ],
+            "animalTwo":"Spotted Dear",
+            "animalTwoData":[
+                "Known as Axis Deer.",
+                "These deer play a crucial role in the park's ecosystem by contributing to seed dispersal through their foraging habits, aiding in the regeneration of plant species."
+            ],
+            "animalThree":"Sri Lankan Leopard",
+            "animalThreeData":[
+                "These animal is known for their adaptability to various habitats, from dense forests to open grasslands.",
+                "Also they are elusive and possess a unique coat pattern, with rosettes that are more closely spaced compared to other leopard subspecies."
+            ],
+            "source":"Data sourced from Udawalawe National Park official information."
+
+        }
+    }
+]

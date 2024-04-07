@@ -1,0 +1,154 @@
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+aside {
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    width: 150px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+header {
+    display: none; 
+}
+.logo{
+    width: 100px;
+}
+#close-btn, #check{
+    display: none;
+}
+h2{
+    font-size: 25px;
+    color: #ffffff;
+}
+nav ul {
+    list-style-type: none;
+}
+.logout {
+    background-color: #ffffff;
+    margin: 380px 0px 0 0px;
+    padding: 8px 12px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+.logout a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+}
+main {
+    margin-left: 220px;
+    margin-bottom: 100px;
+    padding: 0px 40px 40px 30px;
+}
+.title {
+    background-color: #c5c1c1;
+    border-bottom: 2px solid #817f7f;
+    margin-bottom: 30px;
+}
+.title h1 {
+    font-size: 36px;
+    text-align: center;
+    color: #4e0000;
+    padding: 30px 20px 10px 20px;
+    font-weight: 600;
+}
+.grid-container {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    border: 2px solid #0a0a0a; 
+    padding: 30px;
+}
+.grid-item {
+    background-color: #dbd3d3;
+    padding: 20px 40px 20px 40px;
+    border-radius: 40px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+.grid-item:hover {
+    transform: translateY(-3px);
+}
+.grid-item p {
+    color: #1b1b1b;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: underline;
+}
+.grid-item button {
+    background-color: #76a37c5e;
+    margin-top: 50px;
+    margin: 0px 70px 0 70px;
+    padding: 10px 0px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.grid-item button:hover {
+    transform: scale(1.1);
+}
+
+/* Responsive*/
+
+@media screen and (max-width: 768px) {
+    main {
+        margin-left: 0;
+        padding: 0px 20px 0px 20px;
+    }
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    header {
+        display: flex;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #000;
+        padding: 10px 25px 50px 25px;
+        z-index: 100;
+    }
+    .icons {
+        position: absolute;
+        right: 1%;
+        font-size: 2.8rem;
+        color: #ffffff;
+        cursor: pointer;
+    }
+    .logo{
+        width: 90px;
+    }
+    h2{
+        padding-top: 0px;
+    }
+    #close-btn {
+        padding-left: 90%;
+        display: block;
+        margin: 0;
+    }
+    .title h1 {
+        font-size: 25px;
+    }
+    .logout {
+        background-color: #ffffff;
+        margin: 420px 0px 0 0px;
+        padding: 6px 10px;
+    }
+    .logout a{
+        font-size: 18px;
+    }
+    
+}
+
+

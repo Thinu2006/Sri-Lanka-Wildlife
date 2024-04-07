@@ -1,0 +1,32 @@
+[
+    {
+        "banner": {
+            "pageTitle": "Wilpattu National Park"
+        }
+    },
+    {
+        "intro":{
+           "title":"Introduction",
+           "contentOne":"Wilpattu National Park, located in the North Central Province of Sri Lanka, is one of the country's most popular national parks.Spanning over 644 square kilometers, this UNESCO World Heritage Site is home to a diverse array of flora and fauna, making it a haven for wildlife enthusiasts and photographers alike.",
+           "contentTwo":"Top Wildlife Spotting Opportunities One of the main reasons visitors flock to Wilpattu National Park is to spot its incredible wildlife population. The park is home to numerous mammals, reptiles, and amphibians, making it an ideal location for wildlife safaris."
+        }
+    },
+    {
+        "wilpattuData":{
+            "cardOnetitle":"Bio-Diversity of Wilpattu",
+            "cardOneContent":"Wilpattu National Park harmoniously weaves together the elements of beauty and climate, creating a symphony that resonates with every visitor. Wilpattu invites you to immerse yourself in its unparalleled beauty, fostering an appreciation for the intricate connection between the environment and the breathtaking wonders it holds. Explore, embrace, and cherish this natural sanctuary.",
+            "cardTwotitle":"Activities To Engage",
+            "cardTwoContent":"The park offers a treasure trove of activities that promise an unforgettable adventure for nature enthusiasts.Here are some thrilling activities to embark on during your visit:",
+            "Wilpattu":[
+                "Safari Excursions",
+                "Bird Watching",
+                "Camping Under the Stars",
+                "Photography Expeditions",
+                "Boat Safaris"
+            ],
+            "cardThreetitle":"Conservation Initiatives",
+            "cardThreeContentOne":"Explores efforts aimed at preserving ecosystems, wildlife, and natural resources. Through various strategies and actions, these initiatives strive to safeguard our planet's biodiversity and ecological balance",
+            "cardThreeContentTwo":"Conservation Initiatives engage communities, advocate policies, conduct research for sustainability, and raise awareness."
+    } 
+    }
+]

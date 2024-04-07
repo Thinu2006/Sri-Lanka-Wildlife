@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leopard</title>  
+    <link rel="stylesheet" href="./leopards.css">
+    <meta name="description" content="Wildlife Sri Lanka">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    
+    <!--icons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
+    <!--Manifest File-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Alpine.js-->
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" class="logo">
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <a href="login.html">
+                <ion-icon name="log-in-outline" class="loginPage"></ion-icon>
+            </a>
+            <ion-icon name="menu-outline" class="hamburger-btn"></ion-icon>
+            <ion-icon name="close-outline" class="close-btn"></ion-icon>
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="intro.html">About  <ion-icon name="caret-down-outline"></ion-icon></a>
+                <ul>
+                    <li><a href="Wilpattu.html">Wilpattu</a></li>
+                    <li><a href="Udawalawe.html">Udawalawe</a></li>
+                    <li><a href="Minneriya.html">Minneriya</a></li>
+                    <li><a href="Yala.html">Yala</a></li>
+                </ul>
+                </li>
+                <li><a href="Department.html">Department</a></li>
+                <li><a href="Animals.html">Animals  <ion-icon name="caret-down-outline"></ion-icon></a>
+                <ul>
+                    <li><a href="Leopards.html">Leopards</a></li>
+                </ul>
+                </li>
+                <button class="login-btn"><a href="login.html" class="link" name="logout">LOGOUT</a></button>
+            </ul>
+        </nav>
+    </header>
+    <section class="bg-image">
+        <section class="bg-content" x-data="banner">
+            <h1 x-text="pageTitle"></h1>
+        </section>
+    </section>
+    <main>
+        <section class="main-container" x-data="intro">
+            <section class="main-title" x-text="title" id="titleOne"></section>
+            <section class="content">
+                <p x-text="paraOne" id="paraOne"></p>
+            </section>
+            <section class="sub-container">
+                <section class="containerOne" >
+                    <section class="sub-title-one" x-text="parkOneTitle"></section>
+                    <section class="sub-content">
+                        <p x-text="parkOneContent" id="paraTwo"></p>
+                    </section>
+                </section>
+                <section class="containerTwo">
+                    <section class="sub-title-two" x-text="parkTwoTitle"></section>
+                    <section class="sub-content">
+                        <p x-text="parkTwoContent" id="paraThree"></p>
+                    </section>
+                </section>
+                <section class="containerThree" >
+                    <section class="sub-title-three" x-text="parkThreeTitle"></section>
+                    <section class="sub-content">
+                        <p x-text="parkThreeContent" id="paraFour"></p>
+                    </section>
+                </section>
+            </section>
+            <button onclick="openEditorOne()" class="editbtnOne">Click To Edit Content</button> 
+        </section>
+        <!-- The Modal One -->
+        <section id="editModalOne" class="modalOne">
+            <h1 class="model-title">Edit Content</h1>
+            <!-- Modal content -->
+            <section class="modal-content">
+                <textarea id="editedHeadingOne"class="editTitle"></textarea>
+                <textarea id="editedParaOne" class="editPara"></textarea>
+                <textarea id="editedParkHeadingOne" class="editParkTitle"></textarea>
+                <textarea id="editedParkParaOne"class="editParkPara"></textarea>
+                <textarea id="editedParkHeadingTwo" class="editParkTitle"></textarea>
+                <textarea id="editedParkParaTwo"class="editParkPara"></textarea>
+                <textarea id="editedParkHeadingThree" class="editParkTitle"></textarea>
+                <textarea id="editedParkParaThree"class="editParkPara"></textarea>
+            </section>
+            <button onclick="saveChangesOne()" class="model-button">Save Changes</button>
+            <button onclick="closeEditorOne()" class="model-button">Close</button>
+        </section>
+
+        <section class="main-container"x-data="threats">
+            <section class="main-title" x-text="title" id="titleTwo"></section>
+            <section class="t-container">
+                <section class="t-title" x-text="subTitleOne" id="subTitleOne"></section>
+                <section class="t-content">
+                    <section>
+                        <ul id="listOne">
+                            <template x-for="points in harm">
+                                <li x-text="points"></li>
+                            </template>
+                        </ul>
+                    </section>
+                    <section class="img-container">
+                        <img src="./img/t-img-1.jpg" class="t-img-1" alt="Leopard">
+                    </section>
+                </section>
+            </section>
+            <section class="t-container">
+                <section class="t-title" x-text="subTitleTwo" id="subTitleTwo"></section>
+                <section class="t-content">
+                    <section>
+                        <ul id="listTwo">
+                            <template x-for="bullets in actions">
+                                <li x-text="bullets"></li>
+                            </template>
+                        </ul>
+                    </section>
+                    <section class="img-container">
+                        <img src="./img/t-img-2.jpg" class="t-img-2" alt="Leopard Skin">
+                    </section>
+                </section>
+            </section>
+            <button onclick="openEditorTwo()" class="editbtnTwo">Click To Edit Content</button> 
+        </section>
+        <!-- The Modal Two -->
+        <section id="editModalTwo" class="modalTwo">
+            <h1 class="model-title">Edit Content</h1>
+            <!-- Modal content -->
+            <section class="modal-content">
+                <textarea id="editedHeadingTwo"class="editTitle"></textarea>
+                <textarea id="editedSubHeadingOne" class="editSubTitle"></textarea>
+                <textarea id="editedListOne"class="editList"></textarea>
+                <textarea id="editedSubHeadingTwo"class="editSubTitle"></textarea>
+                <textarea id="editedListTwo" class="editList"></textarea>
+            </section>
+            <button onclick="saveChangesTwo()" class="model-button">Save Changes</button>
+            <button onclick="closeEditorTwo()" class="model-button">Close</button>
+        </section>
+    </main>
+    <footer id="footer">
+        <section id="newsletter">
+            <h2>Subscribe Newsletter</h2>
+            <form id="subscribeForm">
+                <input type="email" id="emailInput" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        <section class="footer-container">
+            <section class="social-icons">
+                <ion-icon name="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter"></ion-icon>
+                <ion-icon name="logo-google"></ion-icon>
+            </section>
+            <section class="footer-nav">
+                <a href="index.html">Home</a>
+                <a href="intro.html">About</a>
+                <a href="Department.html">Department</a>
+                <a href="Animals.html">Animals</a>
+            </section>
+            <section class="footer-bottom">
+                <p>Copyright &copy;2023; Designed by <spam class="designer">Thinudi Fernando</spam></p>
+            </section>
+        </section>
+    </footer>
+    <script src="./leopard.js"></script>
+    <script src="./newsletter.js"></script>
+</body>
+</html>

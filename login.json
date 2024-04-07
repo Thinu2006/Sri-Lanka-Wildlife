@@ -1,0 +1,17 @@
+[
+    {
+        "formData": {
+            "signupTitle": "Create Account",
+            "signupPara": "To explore the wildlife of Sri Lanka, please sign up using your personal information.",
+            "mainTitleSignup": "SIGNUP",
+            "signupBtn": "Sign Up",
+            "loginTitle": "Welcome Back",
+            "loginPara": "Please log in using your personal information to explore the wildlife of Sri Lanka.",
+            "mainTitleLogin": "LOGIN",
+            "forgotLink": "Forgot password?", 
+            "loginBtn": "Login"
+        }
+    }
+]
+
+

@@ -1,0 +1,40 @@
+[
+    {
+        "banner": {
+            "pageTitle": "Leopards In Sri Lanka"
+        }
+    },
+    {
+        "intro":{
+            "title": "Introduction",
+            "paraOne":"The Sri Lankan Leopard (Panthera pardus kotiya) is an endemic species found in Sri Lanka. With its striking coat of grey, black, and buff spots, this magnificent creature is an icon of Sri Lanka's biodiversity. Leopards are solitary creatures that prefer a mix of evergreen forest, scrub jungle, and open country.",
+            "parkOneTitle":"Yala National Park",
+            "parkOneContent":"This national park located on the southeast coast of Sri Lanka is considered one of the best places in the world to see leopards in their natural habitat. Covering an area of over 97,000 hectares, it has the highest density of wild leopards in the world. Visitors can take guided safaris through the park's diverse landscapes including forests, grasslands, and lagoons, offering opportunities to spot these elusive big cats.",
+            "parkTwoTitle":"Wilpattu National Park",
+            "parkTwoContent":"Located in northwest Sri Lanka, this vast national park covers an area of approximately 131,693 hectares and is home to a significant population of leopards. With numerous water sources such as villus (natural lakes) scattered throughout the park, it provides ideal habitats for leopards and other wildlife. Guided jeep safaris offer visitors chances to observe leopards along with many other species.",
+            "parkThreeTitle":"Hortain Plains",
+            "parkThreeContent":"Situated in central highland region of Sri Lanka, this national park consists mostly of montane grassland interspersed with patches of forest. At elevations ranging from 2,100–2,300 meters, it offers cooler climate compared to lowland parks. Although not as famous for leopard sightings as Yala or Wilpattu, there have been reports of leopards roaming around Horton Plains."
+        }
+    },
+    {
+        "threats":{
+            "title":"Threats to Sri Lankan Leopards",
+            "subTitleOne":"Loss Of Habitat",
+            "harm":[
+                "The growing human presence threatens leopard habitats, as deforestation, agriculture, and urbanization shrink their living space, disturbing their natural behavior.",
+                "Reduced habitat for leopards leads to increased human-leopard conflicts, threatening both leopard populations and human communities.",
+                "Encourage sustainable development, responsible land-use planning, reforestation, and protected areas to combat habitat loss and fragmentation, minimizing environmental impact",
+                "Explore the efforts of the Wildlife Conservation Society of Galle (WCSG) in combating habitat loss and promoting coexistence."
+            ],
+            "subTitleTwo":"Poaching and Illegal Wildlife Trade",
+            "actions":[
+                "Poaching and illegal wildlife trade target leopards for their skins, bones, and other body parts, posing a severe threat to their survival.",
+                "Depleting leopard populations disrupt the balance of ecosystems, impacting biodiversity and ecological stability.",
+                "Strengthening law enforcement capacities, increasing penalties for wildlife crimes, reducing consumer demand for illicit products derived from leopards, and engaging local communities in conservation initiatives can contribute to combatting poaching and illegal trade.",
+                "Support the initiatives of Leopard Conservation Trust Sri Lanka dedicated to combating poaching and preserving leopard populations."
+                
+            ]
+        }
+
+    }
+]

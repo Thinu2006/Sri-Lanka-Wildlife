@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Lanka Wildlife</title>  
+    <link rel="stylesheet" href="./login.css">
+    <meta name="description" content="Wildlife Sri Lanka">
+
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    
+    <!--icons-->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <!--Manifest File-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!--Alpine.js-->
+    <script src="//unpkg.com/alpinejs" defer></script>
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" class="logo">
+        <input type="checkbox" id="check">
+        <label for="check" class="icons">
+            <a href="login.html">
+                <ion-icon name="log-in-outline" class="loginPage"></ion-icon>
+            </a>
+            <ion-icon name="menu-outline" class="hamburger-btn"></ion-icon>
+            <ion-icon name="close-outline" class="close-btn"></ion-icon>
+        </label>
+        <nav class="navbar">
+            <ul>
+                <li><a href="G-index.html">Home</a></li>
+                <li><a href="G-intro.html">About  <ion-icon name="caret-down-outline"></ion-icon></a>
+                <ul>
+                    <li><a href="G-Wilpattu.html">Wilpattu</a></li>
+                    <li><a href="G-Udawalawe.html">Udawalawe</a></li>
+                    <li><a href="G-Minneriya.html">Minneriya</a></li>
+                    <li><a href="G-Yala.html">Yala</a></li>
+                </ul>
+                </li>
+                <li><a href="G-Department.html">Department</a></li>
+                <li><a href="G-Animals.html">Animals  <ion-icon name="caret-down-outline"></ion-icon></a>
+                <ul>
+                    <li><a href="G-Leopards.html">Leopards</a></li>
+                </ul>
+                </li>
+                <button class="login-btn"><a href="login.html" class="link">LOGIN</a></button>
+            </ul>
+        </nav>
+    </header>
+    <section class="container">
+        <section class="form-box" x-data="formData">
+            <!--Registration Form-->
+            <section class="form-box-signup" id="signupForm">
+                <section class="form-details">
+                    <h2 x-text="signupTitle"></h2>
+                    <p x-text="signupPara"></p>
+                </section>
+                <section class="form-content">
+                    <h1 x-text="mainTitleSignup"></h1>
+                    <form>
+                        <section class="input-group">
+
+                            <section class="input-field">
+                                <ion-icon name="person" class="icon"></ion-icon>
+                                <input type="text" id="regUsername" placeholder="Enter Your Username" required>
+                            </section>
+
+                            <section class="input-field">
+                                <ion-icon name="mail" class="icon"></ion-icon>
+                                <input type="email" id="regEmail" placeholder="Email" required>
+                            </section>
+                            
+                            <section class="input-field">
+                                <ion-icon name="lock-closed" class="icon"></ion-icon>
+                                <input type="password" id="regPassword" placeholder="Create Password" required>
+                            </section>
+
+                            <section class="policy-text">
+                                <input type="checkbox" id="policy">
+                                <label for="policy" >
+                                    I agree to the
+                                    <a href="#" class="option">Terms & Conditions</a>
+                                </label>
+                            </section>
+                            
+                        </section>
+                        <button type="submit" x-text="signupBtn"></button>
+                    </form>
+                    <section class="bottom-link">
+                        Already have an account?
+                        <a href="#" id="login-link">Login</a>
+                    </section>
+                </section>  
+            </section>
+            <!--Login Form-->
+            <section class="form-box-login" id="loginForm">
+                <section class="form-details">
+                    <h2 x-text="loginTitle"></h2>
+                    <p x-text="loginPara"></p>
+                </section>
+                <section class="form-content">
+                    <h1 x-text="mainTitleLogin"></h1>
+                    <form>
+                        <section class="input-group">
+            
+                            <section class="input-field">
+                                <ion-icon name="person" class="icon"></ion-icon>
+                                <input type="text" id="username" placeholder="Username" required>
+                            </section>
+            
+                            <section class="input-field">
+                                <ion-icon name="lock-closed" class="icon"></ion-icon>
+                                <input type="password" id="password" placeholder="Password" required>
+                            </section>
+
+                            <a href="#" class="forgot-pass-link" id="class" x-text="forgotLink"></a>
+
+                        </section>
+                        <button type="submit" x-text="loginBtn"></button>
+                    </form>
+                    <section class="bottom-link">
+                        Don't have an account?
+                        <a href="#" id="signup-link">Signup</a>
+                    </section>
+                </section>
+            </section>
+            
+        </section>
+    </section>
+    <script src="./loginData.js"></script>
+</body>
+</html>
+
