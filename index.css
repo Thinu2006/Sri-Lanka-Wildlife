@@ -452,33 +452,17 @@ main{
         font-size: 18px;
     }
     #subscribeForm{
-        margin: 30px 30px 40px 30px;
+        margin: 30px 0px 40px 0px;
     }
     #subscribeForm input{
         height: 25px;
         width: 150px;
         font-size: 12px;
-        padding: 0 8px;
+        padding: 30px 20px;
     }
     #subscribeForm button{
         height: 30px;
         width: 110px;
-        font-size: 13px;
-    }
-}
-@media  screen and (max-width:630px){
-    #subscribeForm{
-        margin: 0px 30px 40px 30px;
-    }
-}
-@media screen and (max-width: 382px){
-    #subscribeForm input{
-        width: 100px;
-        padding: 3px 20px;
-    }
-    #subscribeForm button{
-        height: 30px;
-        width: 90px;
         font-size: 13px;
     }
 }
